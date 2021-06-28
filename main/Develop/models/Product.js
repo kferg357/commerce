@@ -30,6 +30,24 @@ Product.init(
       }
     },
 
+    // define stock column
+    stock: {
+      tpye: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 10, 
+      validate: {
+        isNumeric: true
+      }
+    },
+    // define category_id column
+    category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "category",
+        key: "id"
+      }
+
+    }
 
   },
   {
