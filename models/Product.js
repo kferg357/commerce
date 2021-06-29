@@ -18,7 +18,7 @@ Product.init(
     },
     // define product_name column
     product_name: {
-      type: DataTypes.STRINGS,
+      type: DataTypes.STRING,
       allowNull: false
     },
     // define price column
@@ -32,7 +32,7 @@ Product.init(
 
     // define stock column
     stock: {
-      tpye: DataTypes.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 10,
       validate: {
